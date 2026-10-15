@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": "How many total cards must a legal competitive Pokemon TCG deck contain?",
+      "answerable": true,
+      "evidence": ["legal Pokemon Trading Card Game deck for competitive play must contain exactly sixty cards"]
+    },
+    {
+      "id": "q2",
+      "question": "How many ACE SPEC cards can a player include in their deck?",
+      "answerable": true,
+      "evidence": ["permitted to include only one single ACE SPEC card in their entire sixty-card deck"]
+    },
+    {
+      "id": "q3",
+      "question": "What happens if a player cannot draw a card at the start of their turn because the deck is empty?",
+      "answerable": true,
+      "evidence": ["failing to draw because the deck has zero remaining cards results in an immediate loss by deckout"]
+    },
+    {
+      "id": "q4",
+      "question": "How is the Confused Special Condition indicated on the card?",
+      "answerable": true,
+      "evidence": ["Confused: The card is turned completely upside down (180 degrees)"]
+    },
+    {
+      "id": "q5",
+      "question": "What Item card allows evolving a Basic Pokemon directly into a Stage 2 form?",
+      "answerable": true,
+      "evidence": ["Rare Candy allows a player to evolve a Basic Pokemon directly into a Stage 2"]
+    },
+    {
+      "id": "q6",
+      "question": "How many Prize cards does an opponent take when Knocking Out a Pokemon ex?",
+      "answerable": true,
+      "evidence": ["when a Pokemon ex is Knocked Out, the opponent takes two Prize cards"]
+    },
+    {
+      "id": "q7",
+      "question": "How do you calculate the aerodynamic drag coefficient of a Boeing 747 aircraft?",
+      "answerable": false,
+      "evidence": []
+    },
+    {
+      "id": "q8",
+      "question": "What is the rule regarding the Lost Zone and how do cards enter it?",
+      "answerable": false,
+      "evidence": []
+    }
+  ]
+}
