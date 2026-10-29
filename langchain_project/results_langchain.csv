@@ -1,0 +1,8 @@
+Configuration,Chunk_Size,Top_k,Score_Threshold,Found,Total_Answerable,Refused,Total_Unanswerable
+"Baseline (k=3, thresh=0.35, chunk=600)",600,3,0.35,4,6,2,2
+"Low k (k=1, thresh=0.35, chunk=600)",600,1,0.35,4,6,2,2
+"High k (k=5, thresh=0.35, chunk=600)",600,5,0.35,4,6,2,2
+Strict Cutoff (thresh=0.55),600,3,0.55,2,6,2,2
+Permissive Cutoff (thresh=0.20),600,3,0.2,4,6,2,2
+"Small Chunks (chunk=300, overlap=50)",300,3,0.35,4,6,2,2
+"Large Chunks (chunk=1000, overlap=150)",1000,3,0.35,4,6,2,2
