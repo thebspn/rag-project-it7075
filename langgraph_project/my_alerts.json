@@ -1,0 +1,76 @@
+{
+  "alerts": [
+    {
+      "id": "M01",
+      "expected": "escalate",
+      "alert": "Cobalt Strike beaconing detected over HTTPS to external IP 185.220.101.5 on web-prod-01.",
+      "analyst_reasoning": "High-confidence command-and-control signature on critical infrastructure."
+    },
+    {
+      "id": "M02",
+      "expected": "escalate",
+      "alert": "Suspicious PowerShell command downloading Invoke-Mimikatz from pastebin into memory.",
+      "analyst_reasoning": "In-memory credential dumping attack against domain workstation."
+    },
+    {
+      "id": "M03",
+      "expected": "escalate",
+      "alert": "Multiple high-volume database exfiltration queries executed by service account svc-backup.",
+      "analyst_reasoning": "Data theft indicator; service account operating outside established baseline."
+    },
+    {
+      "id": "M04",
+      "expected": "escalate",
+      "alert": "Ransomware canary file deleted and shadow copies cleared via vssadmin on corp-fs-02.",
+      "analyst_reasoning": "Active ransomware staging and defense evasion behavior."
+    },
+    {
+      "id": "M05",
+      "expected": "escalate",
+      "alert": "Living-off-the-land execution: certutil downloading remote executable followed by rundll32 dispatch.",
+      "analyst_reasoning": "Hard Case: Subversion of built-in binary to stage malware; zero exploit keywords present."
+    },
+    {
+      "id": "M06",
+      "expected": "escalate",
+      "alert": "New domain administrator privilege assigned to temporary contractor account contractor_bob.",
+      "analyst_reasoning": "Unauthorized privilege escalation against core domain architecture."
+    },
+    {
+      "id": "M07",
+      "expected": "close",
+      "alert": "Tenable vulnerability scanner flagged critical CVE-2024-3400 finding during monthly scan window.",
+      "analyst_reasoning": "Hard Case: Contains 'critical' keyword, but originates from authorized scanner during maintenance window."
+    },
+    {
+      "id": "M08",
+      "expected": "close",
+      "alert": "User bob.smith successfully reset corporate credentials via Microsoft Entra self-service portal.",
+      "analyst_reasoning": "Routine identity lifecycle event with verified MFA verification."
+    },
+    {
+      "id": "M09",
+      "expected": "close",
+      "alert": "CrowdStrike Falcon quarantined EICAR test string during security engineer deployment validation.",
+      "analyst_reasoning": "Benign antivirus test string deployed for control validation."
+    },
+    {
+      "id": "M10",
+      "expected": "close",
+      "alert": "Two failed SSH attempts from engineering subnet followed by valid session on jumphost-01.",
+      "analyst_reasoning": "Standard user credential mistype originating from trusted internal subnet."
+    },
+    {
+      "id": "M11",
+      "expected": "close",
+      "alert": "Veeam backup task reported warning: shadow storage volume exceeded threshold on db-replica.",
+      "analyst_reasoning": "Routine storage warning; operational maintenance item, not security breach."
+    },
+    {
+      "id": "M12",
+      "expected": "close",
+      "alert": "IT administrator performed scheduled reboot and kernel patching on edge-fw-cluster.",
+      "analyst_reasoning": "Hard Case: Contains 'administrator' keyword, but matches change ticket CHG-8821 in approved change window."
+    }
+  ]
+}

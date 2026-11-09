@@ -1,0 +1,6 @@
+Configuration,Type,Caught,Missed,Over-escalated,Notes
+Narrow (3 words),Keyword Rule Tuning,2/6,4/6,0/6,Evaluated with 3 keywords
+Baseline (5 words),Keyword Rule Tuning,3/6,3/6,2/6,Evaluated with 5 keywords
+Wider (8 words),Keyword Rule Tuning,6/6,0/6,2/6,Evaluated with 8 keywords
+Widest (11 words),Keyword Rule Tuning,6/6,0/6,4/6,Evaluated with 11 keywords
+Graph Modification,Architecture Change (Context Tool + Router),6/6,0/6,0/6,Added verify_context node & multi-factor router to eliminate noise and catch LOTL
