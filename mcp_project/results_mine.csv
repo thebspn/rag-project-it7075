@@ -1,0 +1,13 @@
+host,port,service,lookup_cve,lookup_cve_v2,check_port_policy_result
+10.0.0.99,22,"OpenSSH 8.2p1 Ubuntu",grounded,grounded,"Error executing tool check_port_policy: 1 validation error for check_port_policyArguments
+port
+  Field required [type=missing, input_value={'service': 'OpenSSH 8.2p1 Ubuntu'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing"
+10.0.0.99,80,"nginx 1.18.0",wrong version,wrong version,"Error executing tool check_port_policy: 1 validation error for check_port_policyArguments
+port
+  Field required [type=missing, input_value={'service': 'nginx 1.18.0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing"
+10.0.0.99,8080,"CustomApp Server 1.0",wrong version,true gap,"Error executing tool check_port_policy: 1 validation error for check_port_policyArguments
+port
+  Field required [type=missing, input_value={'service': 'CustomApp Server 1.0'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing"
